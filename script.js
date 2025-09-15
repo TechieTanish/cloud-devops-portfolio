@@ -157,3 +157,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// Certificates Modal Logic
+
+
+const certificateItems = document.querySelectorAll("[data-certificate-item]");
+
+for (let i = 0; i < certificateItems.length; i++) {
+  certificateItems[i].addEventListener("click", function () {
+    const imgSrc = this.querySelector("[data-certificate-img]").getAttribute("data-certificate-img");
+    modalImg.src = imgSrc;
+    testimonialsModalFunc();
+  });
+}

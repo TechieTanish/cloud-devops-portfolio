@@ -1880,3 +1880,47 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+/* Certificates Section */
+.certificate-grid {
+  display: flex;
+  flex-wrap: wrap;       /* Allows wrapping to next line */
+  gap: 1.5rem;           /* Space between certificates */
+  justify-content: center; /* Center align in the row */
+}
+
+.certificate-card {
+  background-color: var(--dark-bg);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;           /* Set fixed width for all certificates */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.certificate-img {
+  width: 300%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;           /* Required for margin auto to work */
+  margin: 0 auto; 
+}
+
+.certificate-title {
+  font-size: var(--fs-5);
+  margin-top: 0.5rem;
+  color: var(--white);
+}
+
+.certificate-description {
+  font-size: var(--fs-6);
+  color: var(--light-gray);
+  margin-top: 0.25rem;
+}

@@ -178,6 +178,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+          
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
@@ -283,19 +287,17 @@
 </section>
 
 
+<div class="modal-container" data-modal-container>
+  <div class="overlay" data-overlay></div>
 
-              <div class="modal-container" data-modal-container>
+  <section class="certificate-modal">
+    <button class="modal-close-btn" data-modal-close-btn>
+      &times;
+    </button>
+    <img src="" alt="Full Certificate" class="modal-img" data-modal-img>
+  </section>
+</div>
 
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </section>
-
-        </div>
 
 
         <!--
@@ -456,9 +458,42 @@
 
       </article>
 
+      
+      <!--
+        -certificates 
+      -->
+      <article class="certificates" data-page="certificates">
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+      
+        <section class="certificates-list">
+          <div class="certificate-card" data-certificate-item>
+            <img src="./images/workshop CR.jpg" 
+                 alt="Workshop Certificate"
+                 class="certificate-img"
+                 data-certificate-img="./images/workshop CR.jpg">
+            <h3 class="certificate-title">Cloud & DevOps Workshop</h3>
+            <p class="certificate-description">
+              Hands-on workshop covering web dev, and styling basics.
+            </p>
+          </div>
+          
+          <div class="certificate-card" data-certificate-item>
+            <img src="./images/10 day traning.jpg" 
+                 alt="10 Days Training Certificate"
+                 class="certificate-img"
+                 data-certificate-img="./achievements/10 day traning.jpg">
+            <h3 class="certificate-title">Graphics & Video Editing Training</h3>
+            <p class="certificate-description">
+              10-day training organized by IQAC in collaboration with IT Club AVINYA.
+            </p>
+          </div>
+          
 
-
-
+        </section>
+      </article>
+      
 <!--
   - #PORTFOLIO
 -->
